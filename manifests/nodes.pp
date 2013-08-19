@@ -21,6 +21,7 @@ class admin {
 #CentOs 2
 node default inherits 'ip-10-138-30-54.ap-southeast-1.compute.internal' {
 	include sudo
+	include ssh
 	$MyText = "Local Default"
 	file { '/tmp/mytext':
 		content => $MyText,
